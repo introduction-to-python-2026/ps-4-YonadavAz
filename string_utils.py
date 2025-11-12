@@ -18,4 +18,16 @@ def split_before_each_uppercases(formula):
 
 
 def split_at_first_digit(formula):
-    pass # Replace the `pass` with your code
+    import string
+def split_before_each_uppercases(formula):
+  upper = string.ascii_uppercase
+  a = ""
+  b=[]
+  for i in range(len(formula)):
+    if formula[i] not in upper:
+      a+=formula[i]
+    else:
+      a+=formula[i]
+      b.append(a)
+      a=""
+  return b
