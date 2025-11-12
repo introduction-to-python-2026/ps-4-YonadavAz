@@ -7,11 +7,13 @@ def split_before_each_uppercases(formula):
     if formula[i] not in upper:
       a+=formula[i]
     else:
-      a+=formula[i]
-      b.append(a)
-      a=""
+      if not a=="":
+        b.append(a)
+      a=formula[i]
+  if not a=="":
+    b.append(a)
   return b
-
+      
             
 
 
