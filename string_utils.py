@@ -16,10 +16,8 @@ def split_before_each_uppercases(formula):
     return a, b
             
 
-
+import string
 def split_at_first_digit(formula):
-    import string
-def split_before_each_uppercases(formula):
   upper = string.ascii_uppercase
   a = ""
   b=[]
